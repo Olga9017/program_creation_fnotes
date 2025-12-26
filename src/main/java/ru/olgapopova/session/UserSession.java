@@ -1,4 +1,17 @@
 package ru.olgapopova.session;
 
-public class UserSession {
+import ru.olgapopova.model.User;
+
+public enum UserSession {
+   INSTANCE;
+
+   private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }
